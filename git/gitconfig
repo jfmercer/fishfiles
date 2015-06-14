@@ -1,0 +1,69 @@
+# git user & Github credentials are set as env variables. See README for more
+# info.
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[color]
+		branch = true
+		diff = true
+		grep = true
+		interactive = true
+		status = true
+		ui = true
+
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "interactive"]
+		error = red bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+	branch = magenta
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+	# the default is 'less -FRSX'
+	#pager = most
+
+[credential]
+	helper = osxkeychain
+
+[diff]
+  mnemonicprefix = true
+  tool = vimdiff
+
+# Any git pull or git fetch will auto-prune
+[fetch]
+	prune = true
+
+[github]
+    user = jfmercer
+
+[merge]
+    tool = vimdiff
+
+[push]
+    # This is the default in Git 2.0
+    default = simple
+
+[user]
+	name = John F. Mercer
+    # This forces me to choose either my personal email
+    # or my work email per repository
+    # Set with: git config user.email "foobar"
+	email = (none)
