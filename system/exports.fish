@@ -1,9 +1,9 @@
 # Make vim the default editor
 set -x EDITOR "vim"
 # Don’t clear the screen after quitting a manual page
-set -x MANPAGER "less -X"
+# set -x MANPAGER "less -X"
 # Highlight section titles in manual pages
-set -x LESS_TERMCAP_md "$ORANGE"
+# set -x LESS_TERMCAP_md "$ORANGE"
 # set $SHELL
 set -x SHELL "/usr/local/bin/fish"
 # Larger zsh history (allow 32³ entries; default is 500)
