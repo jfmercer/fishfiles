@@ -32,8 +32,11 @@ set -x TERM xterm-256color
 # set -x LESS '--ignore-case --raw-control-chars'
 # set -x PAGER 'less'
 
+# set -x VAGRANT_DEFAULT_PROVIDER vmware_fusion
+
 # Silence fish greeting
 set -e fish_greeting
 
 # set -x LSCOLORS "exfxcxdxbxegedabagacad"
-set -x CLICOLOR true
+# set -x CLICOLOR true
+

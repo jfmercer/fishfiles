@@ -1,4 +1,4 @@
-set GRC (which grc)
+set -x GRC (which grc)
 if test -f $GRC
     alias colourify "$GRC -es --colour=auto"
     alias configure 'colourify ./configure'
