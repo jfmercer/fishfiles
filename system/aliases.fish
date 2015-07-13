@@ -62,7 +62,7 @@ alias ln "ln -i"
 # Fix Homebrew permission issues
 alias fixbrew 'sudo chown -R (eval whoami):admin (eval brew --prefix)'
 
-# Enable  to be sudo’ed
+# Enable sudo to be sudo’ed
 alias sudo 'sudo '
 
 # Get OS X Software Updates, update Homebrew itself, and upgrade installed Homebrew packages
@@ -77,7 +77,7 @@ alias ips "ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias whois "whois -h whois-servers.net"
 
 # Flush Directory Service cache
-alias flush "sudo discoveryutil mdnsflushcache; sudo discoveryutil udnsflushcaches; echo 'flushed'"
+alias flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo 'flushed'"
 
 # View HTTP traffic
 alias sniff "sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -137,21 +137,18 @@ alias arestart "sudo apachectl restart"
 alias alogs 'cd /private/var/log/apache2'
 
 # MySQL
-alias mrestart "sudo mysql.server restart"
-alias killmysql "launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+# alias mrestart "sudo mysql.server restart"
+# alias killmysql "launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 
 # MySQL and Apache
-alias start "mysql.server start ; and sudo apachectl start"
-alias stop "mysql.server stop ; and sudo apachectl stop"
+# alias start "mysql.server start ; and sudo apachectl start"
+# alias stop "mysql.server stop ; and sudo apachectl stop"
 
 # PHP
 alias e53 "vim /usr/local/etc/php/5.3/php.ini"
 alias e54 "vim /usr/local/etc/php/5.4/php.ini"
 alias e55 "vim /usr/local/etc/php/5.5/php.ini"
 alias e56 "vim /usr/local/etc/php/5.6/php.ini"
-
-# ElasticSearch
-alias startes "elasticsearch --config /usr/local/opt/elasticsearch13/config/elasticsearch.yml"
 
 # git
 # Delete Merged Branches on localhost
