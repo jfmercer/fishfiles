@@ -47,7 +47,8 @@
   mnemonicprefix = true
   tool = vimdiff
 
-# Any git pull or git fetch will auto-prune
+# Any git pull or git fetch will auto-prune, that is, any local branch whose
+# corresponding remote is gone will be deleted.
 [fetch]
 	prune = true
 
