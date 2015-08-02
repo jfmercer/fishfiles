@@ -25,7 +25,7 @@ alias gcpa 'git cherry-pick --abort'
 alias gcpc 'git cherry-pick --continue'
 alias gd 'git diff'
 alias gdt 'git difftool'
-alias gf 'git fetch --all'
+alias gfa 'git fetch --all'
 alias gl "git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date relative"
 alias gp 'git push origin HEAD'
 alias gpr 'git pull-request'

@@ -2,6 +2,7 @@
 
 set path_additions $HOME/.fishfiles/bin                       \
                    $HOME/.composer/vendor/bin                 \
+                   $HOME/.npm-global-packages                 \
                    /usr/local/opt/coreutils/libexec/gnubin
 
 for p in $path_additions

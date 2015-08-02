@@ -22,7 +22,7 @@ set -x JAVA_HOME $JAVA7_HOME
 # Disables automatic cowsay on Ansible
 set -x ANSIBLE_NOCOWS 1
 
-# This should color less and git. But it fails for some reason.
+# This should color less and git diff. But it fails for some reason.
 # I had to set the git pager to `most` for it to work.
 set -x PAGER "less"
 set -x LESS "-FRSX"
