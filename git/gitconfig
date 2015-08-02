@@ -38,7 +38,7 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 	# the default is 'less -FRSX'
-	#pager = most
+	pager = less
 
 [credential]
 	helper = osxkeychain

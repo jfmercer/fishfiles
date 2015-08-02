@@ -31,6 +31,7 @@ alias dt "cd ~/Desktop"
 alias g "git"
 alias h "history"
 alias v "vim"
+alias ev "vim ~/.vimrc"
 alias s "subl ."
 alias o "open"
 alias oo "open ."
@@ -95,6 +96,8 @@ alias cc "tr -d '\n' | pbcopy"
 # Recursively delete `.DS_Store` files
 alias cleanup "find . -type f -name '*.DS_Store' -ls -delete"
 
+alias unixtime "date +%s"
+
 # File size
 alias fs "stat -c \"%s bytes\""
 
@@ -114,9 +117,6 @@ alias showdesktop "defaults write com.apple.finder CreateDesktop -bool true ; an
 alias spotoff "sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton "sudo mdutil -a -i on"
-
-# Lock the screen (when going AFK)
-alias afk "/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload "source \$HOME/.fishrc"
