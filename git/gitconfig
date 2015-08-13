@@ -32,7 +32,7 @@
     added = yellow
     changed = green
     untracked = red
-	branch = magenta
+	  branch = magenta
 
 [core]
 	excludesfile = ~/.gitignore
@@ -45,7 +45,7 @@
 
 [diff]
   mnemonicprefix = true
-  tool = vimdiff
+  tool = ksdiff
 
 # Any git pull or git fetch will auto-prune, that is, any local branch whose
 # corresponding remote is gone will be deleted.
@@ -56,7 +56,7 @@
     user = jfmercer
 
 [merge]
-    tool = vimdiff
+    tool = ksdiff
 
 [push]
     # This is the default in Git 2.0
