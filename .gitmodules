@@ -1,0 +1,6 @@
+[submodule "fonts/powerline"]
+	path = fonts/powerline
+	url = https://github.com/powerline/fonts
+[submodule "themes/theme-agnoster"]
+	path = themes/theme-agnoster
+	url = https://github.com/oh-my-fish/theme-agnoster.git
