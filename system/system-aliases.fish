@@ -153,3 +153,6 @@ alias e56 "vim /usr/local/etc/php/5.6/php.ini"
 # git
 # Delete Merged Branches on localhost
 alias dmb "git branch --merged | grep -v "\*" | xargs -n 1 git branch -d"
+
+# Open file in Marked 2
+alias oim "open -a /Applications/Marked\ 2.app/"
