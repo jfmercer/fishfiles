@@ -28,7 +28,6 @@ alias d "cd ~/Dropbox"
 alias C "cd ~/Code"
 alias dl "cd ~/Downloads"
 alias dt "cd ~/Desktop"
-alias g "git"
 alias h "history"
 alias v "vim"
 alias ev "vim ~/.vimrc"
@@ -78,7 +77,7 @@ alias ips "ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias whois "whois -h whois-servers.net"
 
 # Flush Directory Service cache
-alias flush "sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo 'flushed'"
+alias flush "sudo killall -HUP mDNSResponder; echo 'flushed'"
 
 # View HTTP traffic
 alias sniff "sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -150,6 +149,5 @@ alias e54 "vim /usr/local/etc/php/5.4/php.ini"
 alias e55 "vim /usr/local/etc/php/5.5/php.ini"
 alias e56 "vim /usr/local/etc/php/5.6/php.ini"
 
-# git
-# Delete Merged Branches on localhost
-alias dmb "git branch --merged | grep -v "\*" | xargs -n 1 git branch -d"
+# Open file in Marked 2
+alias oim "open -a /Applications/Marked\ 2.app/"
