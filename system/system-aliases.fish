@@ -151,3 +151,4 @@ alias e56 "vim /usr/local/etc/php/5.6/php.ini"
 
 # Open file in Marked 2
 alias oim "open -a /Applications/Marked\ 2.app/"
+
