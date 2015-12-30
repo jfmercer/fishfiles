@@ -37,6 +37,8 @@ set -x TERM xterm-256color
 # Silence fish greeting
 set -e fish_greeting
 
+# Limits fortune to 100 chars
+# fortune -n 100 | cowsay
+
 # set -x LSCOLORS "exfxcxdxbxegedabagacad"
 # set -x CLICOLOR true
-
