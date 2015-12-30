@@ -1,18 +1,12 @@
-# git user & Github credentials are set as env variables. See README for more
-# info.
-
-[apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
+# git user & Github credentials are set as env variables. See README for more info.
 
 [color]
-		branch = true
-		diff = true
-		grep = true
-		interactive = true
-		status = true
-		ui = true
-
+    branch = true
+    diff = true
+    grep = true
+    interactive = true
+    status = true
+    ui = true
 
 [color "branch"]
     current = yellow reverse
@@ -26,45 +20,54 @@
     new = green bold
 
 [color "interactive"]
-		error = red bold
+    error = red bold
 
 [color "status"]
     added = yellow
     changed = green
     untracked = red
-	  branch = magenta
+    branch = magenta
 
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
-	# the default is 'less -FRSX'
-	pager = less
+    excludesfile = ~/.gitignore
+    editor = vim
+    # the default is 'less -FRSX'
+    # pager = less
 
 [credential]
-	helper = osxkeychain
-
-[diff]
-  mnemonicprefix = true
-  tool = ksdiff
+    helper = osxkeychain
 
 # Any git pull or git fetch will auto-prune, that is, any local branch whose
 # corresponding remote is gone will be deleted.
 [fetch]
-	prune = true
+    prune = true
 
 [github]
     user = jfmercer
-
-[merge]
-    tool = ksdiff
 
 [push]
     # This is the default in Git 2.0
     default = simple
 
 [user]
-	name = John F. Mercer
+    name = John F. Mercer
     # This forces me to choose either my personal email
     # or my work email per repository
     # Set with: git config user.email "foobar"
-	email = (none)
+    email = (none)
+
+########## Kaleidoscope ##########
+
+[diff]
+    tool = Kaleidoscope
+[difftool]
+    prompt = false
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = Kaleidoscope
+[mergetool]
+    prompt = false
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustexitcode = true
