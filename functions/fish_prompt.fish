@@ -1,1 +1,0 @@
-/Users/mnemosyne/.fishfiles/themes/theme-agnoster/fish_prompt.fish
