@@ -53,8 +53,11 @@
     name = John F. Mercer
     # This forces me to choose either my personal email
     # or my work email per repository
-    # Set with: git config user.email "foobar"
-    email = (none)
+    # Set with: git config user.email "name@domain.com"
+	  # email =
+
+[merge]
+    conflictStyle = diff3
 
 ########## Kaleidoscope ##########
 
