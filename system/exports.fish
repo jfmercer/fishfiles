@@ -30,10 +30,10 @@ set -x ANSIBLE_NOCOWS 1
 set -x PHANTOMJS_BIN "/usr/local/lib/node_modules/phantomjs/bin/phantomjs"
 
 # Docker settings
-set -x DOCKER_TLS_VERIFY "1";
-set -x DOCKER_HOST "tcp://192.168.99.100:2376";
-set -x DOCKER_CERT_PATH "/Users/mnemosyne/.docker/machine/machines/default";
-set -x DOCKER_MACHINE_NAME "default";
+# set -x DOCKER_TLS_VERIFY "1";
+# set -x DOCKER_HOST "tcp://192.168.99.100:2376";
+# set -x DOCKER_CERT_PATH "/Users/mnemosyne/.docker/machine/machines/default";
+# set -x DOCKER_MACHINE_NAME "default";
 
 # This should color less and git diff. But it fails for some reason.
 # I had to set the git pager to `most` for it to work.
