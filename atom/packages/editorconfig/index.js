@@ -1,6 +1,8 @@
 /** @babel */
-import editorconfig from 'editorconfig';
 import generateConfig from './commands/generate';
+
+const lazyReq = require('lazy-req')(require); // eslint-disable-line
+const editorconfig = lazyReq('editorconfig');
 
 function init(editor) {
 	generateConfig();
@@ -20,7 +22,7 @@ function init(editor) {
 		return;
 	}
 
-	editorconfig.parse(file).then(config => {
+	editorconfig().parse(file).then(config => {
 		if (Object.keys(config).length === 0) {
 			return;
 		}
@@ -43,11 +45,7 @@ function init(editor) {
 
 		if (config.end_of_line && config.end_of_line in lineEndings) {
 			const preferredLineEnding = lineEndings[config.end_of_line];
-			const buffer = editor.getBuffer();
-			buffer.setPreferredLineEnding(preferredLineEnding);
-			buffer.backwardsScanInRange(/\r?\n/g, buffer.getRange(), ({replace}) => {
-				replace(preferredLineEnding);
-			});
+			editor.getBuffer().setPreferredLineEnding(preferredLineEnding);
 		}
 
 		if (config.charset) {
