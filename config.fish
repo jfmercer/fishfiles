@@ -9,8 +9,8 @@ if test -f $HOME/.localrc
 end
 
 set config_files $DOTFILES/**/*.fish
-# echo $config_files
 for file in $config_files;
+  # ls -al $file
   source $file;
 end
 
