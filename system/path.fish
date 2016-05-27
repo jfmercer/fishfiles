@@ -7,7 +7,7 @@ set path_additions $HOME/.fishfiles/bin                       \
                    /usr/local/opt/coreutils/libexec/gnubin
 
 for p in $path_additions
-  if test -d p
+  if test -d $p
     set -gx PATH $p $PATH
   end
 end
