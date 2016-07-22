@@ -1,0 +1,1 @@
+/Users/mnemosyne/.config/fisherman/agnoster/fish_prompt.fish
