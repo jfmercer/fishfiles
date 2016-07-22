@@ -1,0 +1,1 @@
+/Users/mnemosyne/.config/fisherman/grc/init.fish

@@ -1,0 +1,1 @@
+/Users/mnemosyne/.config/fisherman/z/init.fish

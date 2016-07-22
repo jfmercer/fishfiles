@@ -1,0 +1,1 @@
+/Users/mnemosyne/.config/fisherman/grc/functions/grc.wrap.fish
