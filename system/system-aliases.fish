@@ -24,7 +24,7 @@ function \-
 end
 
 # Shortcuts
-alias d "cd ~/Dropbox"
+alias D "cd ~/Dropbox"
 alias C "cd ~/Code"
 alias dl "cd ~/Downloads"
 alias dt "cd ~/Desktop"
@@ -118,7 +118,7 @@ alias spotoff "sudo mdutil -a -i off"
 alias spoton "sudo mdutil -a -i on"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload "source \$HOME/.fishrc"
+alias reload "source \$HOME/.config/fish/config.fish"
 
 # Clear the Download Log
 alias cleardl "sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
@@ -151,4 +151,3 @@ alias e56 "vim /usr/local/etc/php/5.6/php.ini"
 
 # Open file in Marked 2
 alias oim "open -a /Applications/Marked\ 2.app/"
-
