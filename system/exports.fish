@@ -10,6 +10,9 @@ set -x EDITOR "vim"
 # set $SHELL
 set -x SHELL "/usr/local/bin/fish"
 
+# enable z
+set -g Z_SCRIPT_PATH "/usr/local/etc/profile.d/z.sh"
+
 # Larger zsh history (allow 32³ entries; default is 500)
 # set -x HISTSIZE 32768
 # set -x HISTFILESIZE $HISTSIZE
