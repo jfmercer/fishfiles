@@ -3,8 +3,7 @@
 # The bottom of this list will appear first in $PATH
 set path_additions $HOME/.fishfiles/bin                       \
                    $HOME/.composer/vendor/bin                 \
-                   $PWD/node_modules/.bin/                    \
-                   /usr/local/opt/coreutils/libexec/gnubin
+                   $PWD/node_modules/.bin/
 
 for p in $path_additions
   if test -d $p
